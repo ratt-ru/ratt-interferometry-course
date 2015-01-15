@@ -1,0 +1,80 @@
+\documentclass[usenatbib,usegraphicx]{article}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[xindy]{glossaries}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{fullpage}
+
+\makeglossaries
+
+%glossary
+\newacronym{db}{dB}{decibels}
+
+\begin{document}
+
+\title{Imaging and Deconvolution}
+\author{Griffin Foster}
+\date{\today}
+\maketitle
+
+\label{firstpage}
+
+\section{Fourier Transform with Examples}
+
+\begin{itemize}
+\item starting with a generic spatial image, FT to frequency image (UV), FT back to spatial image using only phase and only amplitude
+\item use of FT in imaging, intuative idea
+\item FFT vs DFT, computational scaling
+\end{itemize}
+
+\subsection{Simple Skies}
+
+\begin{itemize}
+\item FT of a single point source image (in phase centre and offset)
+\item FT of a two point source image (in phase centre and offset)
+\item FT of a Guassian source (in phase centre and offset)
+\end{itemize}
+
+\subsection{Incomplete, Non-uniform Sampling}
+
+\begin{itemize}
+\item if we have an image, go to the UV domain, remove regions, how do we reasonably reconstruct the image?
+\item more over, what happens if we sample some of the points in the UV domain multiple times and others never?
+\item the PSF is our sampling of the UV domain
+\item examples of sampling: random, regular/redundant, Gaussian
+\item examples of common arrays: VLA, KAT-7, PAPER
+\item weightings: uniform, natural, briggs robust
+\end{itemize}
+
+\section{Cleaning the Dirty Image}
+
+\begin{itemize}
+\item dirty image is the sky convolved with the PSF
+\item goal: try to decouple the PSF from the dirty image to get a clean image of the sky
+\item deconvolution: extract the sky model, the restored image is a biproduct, residuals are often more interesting
+\end{itemize}
+
+\subsection{CLEAN Algorithm}
+
+\begin{itemize}
+\item basic CLEAN algorithm
+\item variations on CLEAN for computational efficiency
+\item limiations: everything is a delta function, getting into the noise
+\end{itemize}
+
+\subsection{Advanced Topics}
+
+\begin{itemize}
+\item MFS and dealign with broad bandwidth
+\item multi-scale clean
+\item compressed-sensing
+\item W-projection
+\item A-projection
+\end{itemize}
+
+\label{lastpage}
+
+\end{document}
+
