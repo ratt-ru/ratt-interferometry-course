@@ -1,0 +1,39 @@
+########### (Trienko)
+Monday 12:00-12:45: Lecture Fundamentals I
+After page 17 run Simulation.ipynb section Skymodel
+After page 41 run Simulation.ipynb section uv-Coverage
+After page 42 run Simulation.ipynb section Visibilities
+After slides run aperture-synthesis.ipynb 
+###########
+
+###########(Trienko)
+Monday 15:00-15:45: Lecture Fundamentals I
+Fundamentals I: Assignment 1
+Homework complete assignment 1 and read 
+INTERFEROMETRY I AND II AVAILABLE AT: http://www.cv.nrao.edu/course/astr534/ERA.shtml 
+###########
+
+###########(Sphe)
+Tuesday 9:00-9:45: Simulation 101
+Sphe does Simulation 101 with MeqTrees
+###########
+
+###########(Trienko)
+Tuesday 9:45-10:30: Lecture Fundamentals II
+After page 17 run Integration.ipynb section Averaging
+After page 19 run Fringes.ipynb section Fringes
+After page 24 run Integration.ipynb section Even Odd
+After page 30 run Fringes.ipynb section Fringe Washing Function
+After page 35 run Properties.ipynb
+###########
+
+###########(Sphe)
+Tuesday 11:00-11:45: Simulation 101
+Sphe does w-projection smearing prac with MeqTrees
+If time left over we can discuss Assignment 1 memo
+###########
+
+###########(Trienko)
+Tuesday 11:00-11:45: Lecture Fundamentals II
+Fundamentals II: Assignment II
+###########
