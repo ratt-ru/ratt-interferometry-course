@@ -1,6 +1,6 @@
 import imager
 
-def make_my_ms (dec=-30):
+def make_my_ms ():
   conffile = MS + ".cfg";
   file(conffile,"w").write("""AntennaTableName=KAT7_ANTENNAS
 NTimes=240
@@ -16,17 +16,12 @@ MSName=%s
 MSDesPath=.
 NParts=1
 WriteImagerColumns=True
-WriteAutoCorr=True"""%(dec,MS));
+WriteAutoCorr=True"""%(DEC,MS));
   x.sh("makems $conffile");
   x.sh("rm -fr $MS");
   x.sh("mv ${MS}_p0 $MS");
   x.sh("rm -fr $conffile ${MS}_p0.vds $MS.gds");
   # put ones into the MS
-
-def make_ms_series (d0=-90,d1=100,step=10):
-  for dec in range(d0,d1,step):
-    v.MS = "kat7-dec%d.MS"%dec;
-    make_my_ms(dec);
 
 def fill_ms ():
   tab = ms.msw();
