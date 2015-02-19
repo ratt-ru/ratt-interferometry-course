@@ -30,13 +30,3 @@ def fill_ms ():
   tab.putcol("DATA",data);
   tab.putcol("CORRECTED_DATA",data);
 
-def make_uvcov ():
-  makedir(DESTDIR);
-  ms.plot_uvcov(save="$OUTFILE-uvcov.png")
-
-def make_images ():
-  for w,rob in ("natural",0),("uniform",0),("robust",0),("robust",1):
-    imager.make_image(weight=w,robust=rob,dirty_image="$OUTFILE-$w$rob.fits");
-
-
-# pyxis -j 4 *MS per_ms[fill_ms,make_uvcov,imager.make_image]
