@@ -9,8 +9,9 @@ git clone https://github.com/ratt-ru/ratt-interferometry-course.git
 if you haven't already done so. Then:
 
 ```
-cd ratt-interferometry-course/practicals/pyxis-101
+cd ratt-interferometry-course/practicals
 git pull
+cd pyxis-101
 ```
 
 ## A simple task
